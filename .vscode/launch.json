@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "console": "externalTerminal",
+      "cwd": "i:/DownLoad/Learn/DN24_FRF_EMB_02/Document/Embedded/HuynhDucQuangVinh_MCUASM5/Sources/HAL",
+      "program": "i:/DownLoad/Learn/DN24_FRF_EMB_02/Document/Embedded/HuynhDucQuangVinh_MCUASM5/Sources/HAL/build/Debug/outDebug"
+    }
+  ]
+}
