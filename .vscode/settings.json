@@ -68,7 +68,8 @@
     "stdio.h": "c",
     "stdint.h": "c",
     "hal_port.h": "c",
-    "driver_port.h": "c"
+    "driver_port.h": "c",
+    "driver_adc.h": "c"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

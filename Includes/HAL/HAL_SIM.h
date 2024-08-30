@@ -16,7 +16,7 @@
  * @brief Enumeration for system clock control settings for various GPIO port
  *
  */
-typedef enum
+typedef enum port
 {
     PORTA_clockEnable = SIM_SCGC5_PORTA_MASK, /** Bit mask for enabling the clock to PORTA */
     PORTB_clockEnable = SIM_SCGC5_PORTB_MASK, /** Bit mask for enabling the clock to PORTB */
@@ -25,7 +25,7 @@ typedef enum
     PORTE_clockEnable = SIM_SCGC5_PORTE_MASK  /** Bit mask for enabling the clock to PORTE */
 } HAL_port_SCGC5_clock_control_t;
 
-typedef enum
+typedef enum SCGC6
 {
     FTF_clockEnable = SIM_SCGC6_FTF_MASK,       /** Bit mask for enabling the clock to PORTE */
     DMAMUX_clockEnable = SIM_SCGC6_DMAMUX_MASK, /** Bit mask for enabling the clock to PORTE */

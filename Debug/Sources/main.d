@@ -11,9 +11,10 @@ Sources/main.o: ../Sources/main.c ../Sources/../Includes/APP/APP.h \
  ../Sources/../Includes/HAL/HAL_ADC.h \
  ../Sources/../Includes/DRIVER/DRIVER_SIM.h \
  ../Sources/../Includes/HAL/HAL_SIM.h \
+ ../Sources/../Includes/DRIVER/DRIVER_ADC.h \
+ ../Sources/../Includes/DRIVER/DRIVER_Systick.h \
  ../Sources/../Includes/DRIVER/DRIVER_Software_timer.h \
- ../Sources/../Includes/HAL/HAL_Systick.h \
- ../Sources/../Includes/DRIVER/DRIVER_Systick.h
+ ../Sources/../Includes/HAL/HAL_Systick.h
 
 ../Sources/../Includes/APP/APP.h:
 
@@ -47,8 +48,10 @@ Sources/main.o: ../Sources/main.c ../Sources/../Includes/APP/APP.h \
 
 ../Sources/../Includes/HAL/HAL_SIM.h:
 
+../Sources/../Includes/DRIVER/DRIVER_ADC.h:
+
+../Sources/../Includes/DRIVER/DRIVER_Systick.h:
+
 ../Sources/../Includes/DRIVER/DRIVER_Software_timer.h:
 
 ../Sources/../Includes/HAL/HAL_Systick.h:
-
-../Sources/../Includes/DRIVER/DRIVER_Systick.h:

@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Sources/DRIVER/DRIVER_ADC.c \
 ../Sources/DRIVER/DRIVER_GPIO.c \
 ../Sources/DRIVER/DRIVER_NVIC.c \
 ../Sources/DRIVER/DRIVER_PORT.c \
@@ -12,6 +13,7 @@ C_SRCS += \
 ../Sources/DRIVER/DRIVER_Systick.c 
 
 OBJS += \
+./Sources/DRIVER/DRIVER_ADC.o \
 ./Sources/DRIVER/DRIVER_GPIO.o \
 ./Sources/DRIVER/DRIVER_NVIC.o \
 ./Sources/DRIVER/DRIVER_PORT.o \
@@ -20,6 +22,7 @@ OBJS += \
 ./Sources/DRIVER/DRIVER_Systick.o 
 
 C_DEPS += \
+./Sources/DRIVER/DRIVER_ADC.d \
 ./Sources/DRIVER/DRIVER_GPIO.d \
 ./Sources/DRIVER/DRIVER_NVIC.d \
 ./Sources/DRIVER/DRIVER_PORT.d \

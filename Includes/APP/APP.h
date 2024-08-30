@@ -6,8 +6,9 @@
 #include "../Includes/DRIVER/DRIVER_NVIC.h"
 #include "../Includes/DRIVER/DRIVER_PORT.h"
 #include "../Includes/DRIVER/DRIVER_SIM.h"
-#include "../Includes/DRIVER/DRIVER_Software_timer.h"
+#include "../Includes/DRIVER/DRIVER_ADC.h"
 #include "../Includes/DRIVER/DRIVER_Systick.h"
+#include "../Includes/DRIVER/DRIVER_Software_timer.h"
 #include "../Includes/HAL/HAL_ADC.h"
 #include "stdio.h"
 #include "stdint.h"
@@ -40,7 +41,7 @@ void ADC0_Init(void);
 
 void config_Led_LIGHT(uint16_t adc_value);
 
-void ADC0_Read(uint8_t channel);
+void ADC0_Read(DRIVER_input_channel_t channel);
 
 /*******************************************************************************
  * Code

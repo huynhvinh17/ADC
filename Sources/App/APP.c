@@ -52,8 +52,8 @@ void ADC0_Init(void)
     DRIVER_SIM_SCGC5_EnableClock(PORTE_clockEnable);
     DRIVER_SIM_SCGC6_EnableClock(ADC0_clockEnable);
     DRIVER_PORT_Init(PORTE, LIGHT_SENSOR, Pin_analog);
-    HAL_ADC0_CFG1(convert16Bit, busClock);
-    HAL_ADC0_SC2(software_trigger);
+    HAL_ADC0_ConfigRegister1(convert16Bit, busClock);
+    HAL_ADC0_StatusAndControl2(software_trigger);
     DRIVER_NVIC_EnableIRQ(ADC0_IRQn);
 }
 
@@ -62,7 +62,7 @@ void config_Led_LIGHT(uint16_t adc_value)
     float light_percentage;
     light_percentage = ADC_to_Percentage(adc_value);
 
-    if (light_percentage > 70)
+    if (light_percentage > 95)
     {
         HAL_GPIO_WritePin(GPIOD, LED_GREEN_PIN, configPinHigh);
         HAL_GPIO_WritePin(GPIOE, LED_RED_PIN, configPinHigh);
@@ -74,10 +74,7 @@ void config_Led_LIGHT(uint16_t adc_value)
     }
 }
 
-void ADC0_Read(uint8_t channel)
+void ADC0_Read(DRIVER_input_channel_t channel)
 {
-    HAL_ADC0_SC1(0, channel);
-    while (!(ADC0->SC1[0] & ADC_SC1_COCO_MASK))
-    {
-    };
+    HAL_ADC0_StatusAndControl1(channel, enable_interrupt);
 }

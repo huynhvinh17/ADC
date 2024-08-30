@@ -22,7 +22,7 @@ int main(void)
 
     while (1)
     {
-        ADC0_Read(3);
+        ADC0_Read(DADP3_DAD3);
 
         adc_value = ADC_returnValue();
 
