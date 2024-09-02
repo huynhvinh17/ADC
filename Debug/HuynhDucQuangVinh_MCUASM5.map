@@ -233,8 +233,6 @@ Discarded input sections
                 0x00000000       0x28 ./Sources/DRIVER/DRIVER_ADC.o
  .text.DRIVER_ADC0_StatusAndControl2
                 0x00000000       0x1c ./Sources/DRIVER/DRIVER_ADC.o
- .text.DRIVER_ADC0_StatusAndControl1
-                0x00000000       0x28 ./Sources/DRIVER/DRIVER_ADC.o
  .text.DRIVER_ADC0_dataReturn
                 0x00000000       0x10 ./Sources/DRIVER/DRIVER_ADC.o
  .debug_macro   0x00000000      0x802 ./Sources/DRIVER/DRIVER_ADC.o
@@ -700,7 +698,7 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
  .FlashConfig   0x00000400       0x10 ./Project_Settings/Startup_Code/startup_MKL46Z4.o
                 0x00000410                . = ALIGN (0x4)
 
-.text           0x00000410     0x1750
+.text           0x00000410     0x1778
                 0x00000410                . = ALIGN (0x4)
  *(.text)
  .text          0x00000410       0x60 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
@@ -816,147 +814,150 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
  .text.ADC_to_Percentage
                 0x00001710       0x60 ./Sources/DRIVER/DRIVER_ADC.o
                 0x00001710                ADC_to_Percentage
+ .text.DRIVER_ADC0_StatusAndControl1
+                0x00001770       0x28 ./Sources/DRIVER/DRIVER_ADC.o
+                0x00001770                DRIVER_ADC0_StatusAndControl1
  .text.DRIVER_GPIO_Init
-                0x00001770       0x28 ./Sources/DRIVER/DRIVER_GPIO.o
-                0x00001770                DRIVER_GPIO_Init
- .text.DRIVER_GPIO_WritePin
                 0x00001798       0x28 ./Sources/DRIVER/DRIVER_GPIO.o
-                0x00001798                DRIVER_GPIO_WritePin
+                0x00001798                DRIVER_GPIO_Init
+ .text.DRIVER_GPIO_WritePin
+                0x000017c0       0x28 ./Sources/DRIVER/DRIVER_GPIO.o
+                0x000017c0                DRIVER_GPIO_WritePin
  .text.DRIVER_NVIC_EnableIRQ
-                0x000017c0       0x20 ./Sources/DRIVER/DRIVER_NVIC.o
-                0x000017c0                DRIVER_NVIC_EnableIRQ
+                0x000017e8       0x20 ./Sources/DRIVER/DRIVER_NVIC.o
+                0x000017e8                DRIVER_NVIC_EnableIRQ
  .text.DRIVER_PORT_Init
-                0x000017e0       0x28 ./Sources/DRIVER/DRIVER_PORT.o
-                0x000017e0                DRIVER_PORT_Init
+                0x00001808       0x28 ./Sources/DRIVER/DRIVER_PORT.o
+                0x00001808                DRIVER_PORT_Init
  .text.ADC0_IRQHandler
-                0x00001808       0x18 ./Sources/DRIVER/DRIVER_PORT.o
-                0x00001808                ADC0_IRQHandler
+                0x00001830       0x18 ./Sources/DRIVER/DRIVER_PORT.o
+                0x00001830                ADC0_IRQHandler
  .text.ADC_returnValue
-                0x00001820       0x14 ./Sources/DRIVER/DRIVER_PORT.o
-                0x00001820                ADC_returnValue
+                0x00001848       0x14 ./Sources/DRIVER/DRIVER_PORT.o
+                0x00001848                ADC_returnValue
  .text.DRIVER_SIM_SCGC5_EnableClock
-                0x00001834       0x1c ./Sources/DRIVER/DRIVER_SIM.o
-                0x00001834                DRIVER_SIM_SCGC5_EnableClock
+                0x0000185c       0x1c ./Sources/DRIVER/DRIVER_SIM.o
+                0x0000185c                DRIVER_SIM_SCGC5_EnableClock
  .text.DRIVER_SIM_SCGC6_EnableClock
-                0x00001850       0x18 ./Sources/DRIVER/DRIVER_SIM.o
-                0x00001850                DRIVER_SIM_SCGC6_EnableClock
+                0x00001878       0x18 ./Sources/DRIVER/DRIVER_SIM.o
+                0x00001878                DRIVER_SIM_SCGC6_EnableClock
  .text.SysTick_Handler
-                0x00001868       0x2c ./Sources/DRIVER/DRIVER_Systick.o
-                0x00001868                SysTick_Handler
+                0x00001890       0x2c ./Sources/DRIVER/DRIVER_Systick.o
+                0x00001890                SysTick_Handler
  .text.Init_LED_Green
-                0x00001894       0x44 ./Sources/App/APP.o
-                0x00001894                Init_LED_Green
+                0x000018bc       0x44 ./Sources/App/APP.o
+                0x000018bc                Init_LED_Green
  .text.Init_LED_Red
-                0x000018d8       0x44 ./Sources/App/APP.o
-                0x000018d8                Init_LED_Red
+                0x00001900       0x44 ./Sources/App/APP.o
+                0x00001900                Init_LED_Red
  .text.ADC0_Init
-                0x0000191c       0x40 ./Sources/App/APP.o
-                0x0000191c                ADC0_Init
+                0x00001944       0x40 ./Sources/App/APP.o
+                0x00001944                ADC0_Init
  .text.config_Led_LIGHT
-                0x0000195c       0x6c ./Sources/App/APP.o
-                0x0000195c                config_Led_LIGHT
+                0x00001984       0x6c ./Sources/App/APP.o
+                0x00001984                config_Led_LIGHT
  .text.ADC0_Read
-                0x000019c8       0x20 ./Sources/App/APP.o
-                0x000019c8                ADC0_Read
- .text.main     0x000019e8       0x34 ./Sources/main.o
-                0x000019e8                main
+                0x000019f0       0x20 ./Sources/App/APP.o
+                0x000019f0                ADC0_Read
+ .text.main     0x00001a10       0x34 ./Sources/main.o
+                0x00001a10                main
  .text.SystemInit
-                0x00001a1c       0x18 ./Project_Settings/Startup_Code/system_MKL46Z4.o
-                0x00001a1c                SystemInit
- .text.exit     0x00001a34       0x2c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
-                0x00001a34                exit
+                0x00001a44       0x18 ./Project_Settings/Startup_Code/system_MKL46Z4.o
+                0x00001a44                SystemInit
+ .text.exit     0x00001a5c       0x2c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
+                0x00001a5c                exit
  .text.__libc_init_array
-                0x00001a60       0x4c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
-                0x00001a60                __libc_init_array
- .text.memset   0x00001aac       0x10 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
-                0x00001aac                memset
- .text._exit    0x00001abc        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(_exit.o)
-                0x00001abc                _exit
+                0x00001a88       0x4c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
+                0x00001a88                __libc_init_array
+ .text.memset   0x00001ad4       0x10 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+                0x00001ad4                memset
+ .text._exit    0x00001ae4        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(_exit.o)
+                0x00001ae4                _exit
  *(.rodata)
- .rodata        0x00001ac0       0x40 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(divdf3.o)
- .rodata        0x00001b00       0x40 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(muldf3.o)
+ .rodata        0x00001ae8       0x40 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(divdf3.o)
+ .rodata        0x00001b28       0x40 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(muldf3.o)
  *(.rodata*)
  .rodata.str1.1
-                0x00001b40        0x2 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
- *fill*         0x00001b42        0x2 
+                0x00001b68        0x2 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+ *fill*         0x00001b6a        0x2 
  .rodata._global_impure_ptr
-                0x00001b44        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
-                0x00001b44                _global_impure_ptr
+                0x00001b6c        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+                0x00001b6c                _global_impure_ptr
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x00001b48        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .eh_frame      0x00001b70        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
  *(.init)
- .init          0x00001b48        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
-                0x00001b48                _init
- .init          0x00001b4c        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+ .init          0x00001b70        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
+                0x00001b70                _init
+ .init          0x00001b74        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
  *(.fini)
- .fini          0x00001b54        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
-                0x00001b54                _fini
- .fini          0x00001b58        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
-                0x00001b60                . = ALIGN (0x4)
+ .fini          0x00001b7c        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
+                0x00001b7c                _fini
+ .fini          0x00001b80        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+                0x00001b88                . = ALIGN (0x4)
 
-.vfp11_veneer   0x00001b60        0x0
+.vfp11_veneer   0x00001b88        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x00001b60        0x0
+.v4_bx          0x00001b88        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x00001b60        0x0
+.iplt           0x00001b88        0x0
  .iplt          0x00000000        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x00001b60        0x8
-                0x00001b60                __exidx_start = .
+.ARM            0x00001b88        0x8
+                0x00001b88                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x00001b60        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o
-                0x00001b68                __exidx_end = .
+ .ARM.exidx     0x00001b88        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+                0x00001b90                __exidx_end = .
 
-.rel.dyn        0x00001b68        0x0
+.rel.dyn        0x00001b90        0x0
  .rel.iplt      0x00000000        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
 
-.ctors          0x00001b68        0x0
-                0x00001b68                __CTOR_LIST__ = .
+.ctors          0x00001b90        0x0
+                0x00001b90                __CTOR_LIST__ = .
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x00001b68                __CTOR_END__ = .
+                0x00001b90                __CTOR_END__ = .
 
-.dtors          0x00001b68        0x0
-                0x00001b68                __DTOR_LIST__ = .
+.dtors          0x00001b90        0x0
+                0x00001b90                __DTOR_LIST__ = .
  *crtbegin.o(.dtors)
  *crtbegin?.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x00001b68                __DTOR_END__ = .
+                0x00001b90                __DTOR_END__ = .
 
-.preinit_array  0x00001b68        0x0
-                0x00001b68                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x00001b90        0x0
+                0x00001b90                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x00001b68                PROVIDE (__preinit_array_end, .)
+                0x00001b90                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x00001b68        0x4
-                0x00001b68                PROVIDE (__init_array_start, .)
+.init_array     0x00001b90        0x4
+                0x00001b90                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x00001b68        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
-                0x00001b6c                PROVIDE (__init_array_end, .)
+ .init_array    0x00001b90        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+                0x00001b94                PROVIDE (__init_array_end, .)
 
-.fini_array     0x00001b6c        0x4
-                0x00001b6c                PROVIDE (__fini_array_start, .)
+.fini_array     0x00001b94        0x4
+                0x00001b94                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x00001b6c        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
-                0x00001b70                PROVIDE (__fini_array_end, .)
-                0x00001b70                __etext = .
-                0x00001b70                __DATA_ROM = .
+ .fini_array    0x00001b94        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+                0x00001b98                PROVIDE (__fini_array_end, .)
+                0x00001b98                __etext = .
+                0x00001b98                __DATA_ROM = .
 
 .mtb            0x1fffe000        0x0
                 0x1fffe000                . = ALIGN (0x8)
@@ -965,7 +966,7 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
                 0x1fffe000                . = ALIGN (0x8)
                 0x1fffe000                _mtb_end = .
 
-.data           0x1fffe000       0x64 load address 0x00001b70
+.data           0x1fffe000       0x64 load address 0x00001b98
                 0x1fffe000                . = ALIGN (0x4)
                 0x1fffe000                __DATA_RAM = .
                 0x1fffe000                __data_start__ = .
@@ -978,12 +979,12 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
  .jcr           0x1fffe060        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
                 0x1fffe064                . = ALIGN (0x4)
                 0x1fffe064                __data_end__ = .
-                0x00001bd4                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+                0x00001bfc                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
 
-.igot.plt       0x1fffe064        0x0 load address 0x00001bd4
+.igot.plt       0x1fffe064        0x0 load address 0x00001bfc
  .igot.plt      0x00000000        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
 
-.bss            0x1fffe064       0x20 load address 0x00001bd4
+.bss            0x1fffe064       0x20 load address 0x00001bfc
                 0x1fffe064                . = ALIGN (0x4)
                 0x1fffe064                __START_BSS = .
                 0x1fffe064                __bss_start__ = .
@@ -1001,7 +1002,7 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
                 0x1fffe084                __bss_end__ = .
                 0x1fffe084                __END_BSS = .
 
-.heap           0x1fffe084      0x404 load address 0x00001bf4
+.heap           0x1fffe084      0x404 load address 0x00001c1c
                 0x1fffe088                . = ALIGN (0x8)
  *fill*         0x1fffe084        0x4 
                 0x1fffe088                __end__ = .
@@ -1011,7 +1012,7 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
  *fill*         0x1fffe088      0x400 
                 0x1fffe488                __HeapLimit = .
 
-.stack          0x1fffe488      0x400 load address 0x00001ff8
+.stack          0x1fffe488      0x400 load address 0x00002020
                 0x1fffe488                . = ALIGN (0x8)
                 0x1fffe888                . = (. + STACK_SIZE)
  *fill*         0x1fffe488      0x400 
@@ -1224,22 +1225,22 @@ OUTPUT(HuynhDucQuangVinh_MCUASM5.elf elf32-littlearm)
  .debug_macro   0x0000f050      0x223 ./Sources/main.o
  .debug_macro   0x0000f273       0x7e ./Project_Settings/Startup_Code/system_MKL46Z4.o
 
-.debug_line     0x00000000     0x2407
- .debug_line    0x00000000      0x23d ./Sources/HAL/HAL_ADC.o
- .debug_line    0x0000023d      0x234 ./Sources/HAL/HAL_GPIO.o
- .debug_line    0x00000471      0x20e ./Sources/HAL/HAL_NVIC.o
- .debug_line    0x0000067f      0x25a ./Sources/HAL/HAL_PORT.o
- .debug_line    0x000008d9      0x209 ./Sources/HAL/HAL_SIM.o
- .debug_line    0x00000ae2      0x27a ./Sources/DRIVER/DRIVER_ADC.o
- .debug_line    0x00000d5c      0x25f ./Sources/DRIVER/DRIVER_GPIO.o
- .debug_line    0x00000fbb      0x22f ./Sources/DRIVER/DRIVER_NVIC.o
- .debug_line    0x000011ea      0x2c0 ./Sources/DRIVER/DRIVER_PORT.o
- .debug_line    0x000014aa      0x23d ./Sources/DRIVER/DRIVER_SIM.o
- .debug_line    0x000016e7      0x2a3 ./Sources/DRIVER/DRIVER_Systick.o
- .debug_line    0x0000198a      0x402 ./Sources/App/APP.o
- .debug_line    0x00001d8c      0x3c0 ./Sources/main.o
- .debug_line    0x0000214c       0x7b ./Project_Settings/Startup_Code/startup_MKL46Z4.o
- .debug_line    0x000021c7      0x240 ./Project_Settings/Startup_Code/system_MKL46Z4.o
+.debug_line     0x00000000     0x2410
+ .debug_line    0x00000000      0x241 ./Sources/HAL/HAL_ADC.o
+ .debug_line    0x00000241      0x234 ./Sources/HAL/HAL_GPIO.o
+ .debug_line    0x00000475      0x20e ./Sources/HAL/HAL_NVIC.o
+ .debug_line    0x00000683      0x25a ./Sources/HAL/HAL_PORT.o
+ .debug_line    0x000008dd      0x209 ./Sources/HAL/HAL_SIM.o
+ .debug_line    0x00000ae6      0x27e ./Sources/DRIVER/DRIVER_ADC.o
+ .debug_line    0x00000d64      0x25f ./Sources/DRIVER/DRIVER_GPIO.o
+ .debug_line    0x00000fc3      0x22f ./Sources/DRIVER/DRIVER_NVIC.o
+ .debug_line    0x000011f2      0x2c0 ./Sources/DRIVER/DRIVER_PORT.o
+ .debug_line    0x000014b2      0x23d ./Sources/DRIVER/DRIVER_SIM.o
+ .debug_line    0x000016ef      0x2a3 ./Sources/DRIVER/DRIVER_Systick.o
+ .debug_line    0x00001992      0x403 ./Sources/App/APP.o
+ .debug_line    0x00001d95      0x3c0 ./Sources/main.o
+ .debug_line    0x00002155       0x7b ./Project_Settings/Startup_Code/startup_MKL46Z4.o
+ .debug_line    0x000021d0      0x240 ./Project_Settings/Startup_Code/system_MKL46Z4.o
 
 .debug_str      0x00000000    0x51fea
  .debug_str     0x00000000    0x4f2b6 ./Sources/HAL/HAL_ADC.o

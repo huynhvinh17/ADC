@@ -33,6 +33,11 @@ void DRIVER_SIM_SCGC5_EnableClock(DRIVER_port_clock_control_t clockEnable)
     HAL_SIM_SCGC5_EnableClock(clockEnable); /** Enable clock for specific peripheral port */
 }
 
+/**
+ * @brief Enable clock for a peripheral
+ *
+ * @param portClockEnable The clock enable bit mask for peripheral
+ */
 void DRIVER_SIM_SCGC6_EnableClock(DRIVER_SCGC6_clock_control_t clockEnable)
 {
     HAL_SIM_SCGC6_EnableClock(clockEnable);

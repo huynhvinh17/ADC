@@ -37,10 +37,24 @@ void Init_LED_Green(void);
  */
 void Init_LED_Red(void);
 
+/**
+ * @brief Initialize the ADC conversion
+ *
+ */
 void ADC0_Init(void);
 
+/**
+ * @brief Configures and controls the LEDs based on the ADC value.
+ *
+ * @param adc_value The ADC value representing the light sensor's input
+ */
 void config_Led_LIGHT(uint16_t adc_value);
 
+/**
+ * @brief Initiates an ADC conversion on the specified channel
+ *
+ * @param channel The ADC input channel to read
+ */
 void ADC0_Read(DRIVER_input_channel_t channel);
 
 /*******************************************************************************

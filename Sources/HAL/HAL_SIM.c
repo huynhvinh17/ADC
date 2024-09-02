@@ -33,6 +33,11 @@ void HAL_SIM_SCGC5_EnableClock(HAL_port_SCGC5_clock_control_t portClockEnable)
     SIM->SCGC5 |= portClockEnable; /** Enable clock for specific peripheral port */
 }
 
+/**
+ * @brief Enable clock for a peripheral
+ *
+ * @param portClockEnable The clock enable bit mask for peripheral
+ */
 void HAL_SIM_SCGC6_EnableClock(HAL_SCGC6_clock_control_t ClockEnable)
 {
     SIM->SCGC6 |= ClockEnable;

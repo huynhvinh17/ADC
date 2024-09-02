@@ -24,6 +24,11 @@ typedef HAL_SCGC6_clock_control_t DRIVER_SCGC6_clock_control_t;
  */
 void DRIVER_SIM_SCGC5_EnableClock(DRIVER_port_clock_control_t clockEnable);
 
+/**
+ * @brief Enable clock for a peripheral
+ *
+ * @param portClockEnable The clock enable bit mask for peripheral
+ */
 void DRIVER_SIM_SCGC6_EnableClock(DRIVER_SCGC6_clock_control_t clockEnable);
 
 /*******************************************************************************
